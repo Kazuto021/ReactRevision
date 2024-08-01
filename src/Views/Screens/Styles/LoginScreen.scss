@@ -6,9 +6,52 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: contain;
     .child-div{
         letter-spacing: 0.2em;
         border: 1px solid black;
+        border-radius: 10px;
+        width:fit-content;
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+        padding: 1rem;
+        h2{
+            text-align: center;
+            border-bottom: 2px solid brown;
+            margin: 0.2em;
+            border-radius: 25px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.4rem;
+            input{
+                max-width: 60%;
+                border-radius: 25px;
+                border: none;
+                padding: 0.5rem;
+                text-align: center;
+                :focus{
+                    outline: none;
+                }
+            }
+            button{
+                padding: 0.2rem;
+                border-radius: 15px;
+                border: 1px solid black;
+            }
+
+           
+        }
+        p{
+            text-align: center;
+        }
     }
 }
 

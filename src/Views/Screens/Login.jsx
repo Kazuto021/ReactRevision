@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import "./Styles/LoginScreen.scss"
 import { useNavigate } from 'react-router-dom';
+
 
 const Login = () => {
     const nav = useNavigate();
@@ -22,9 +23,16 @@ const Login = () => {
     const navigator = ()=>{
         nav("/signup")
     }
+
+    useEffect(()=>{
+        console.log(data)
+    },[data])
+
+
     return (
         <div className='container'>
             <div className='child-div'>
+                <h2>Login</h2>
                 <form method="post" >
 
                     <label htmlFor="username">Username</label>

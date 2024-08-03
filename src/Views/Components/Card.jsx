@@ -2,7 +2,7 @@ import React from 'react'
 import "./styles/Card.scss"
 const Card = (props) => {
   return (
-    <div className='card'>
+    <div className='card' key={props.key}>
         <h2>{props.title}</h2>
         <img src={props.bgImage} alt=""/>
         <div>

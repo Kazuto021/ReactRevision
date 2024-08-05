@@ -4,6 +4,7 @@ import App from '../App'
 import Login from '../Views/Screens/Login'
 import SignupScreen from '../Views/Screens/SignupScreen'
 import CardScreen from '../Views/Screens/CardScreen'
+import WeatherCard from '../Views/Components/WeatherCard'
 
 const MainRoutes = () => {
     return (
@@ -13,6 +14,7 @@ const MainRoutes = () => {
                 <Route path='/login' element={<Login />} />
                 <Route path='/signup' element={<SignupScreen />} />
                 <Route path='/products' element={<CardScreen />} />
+                <Route path='/WeatherCard' element={<WeatherCard />} />
             </Routes>
         </BrowserRouter>
     )
